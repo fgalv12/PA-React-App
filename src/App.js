@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
+import Counter from './components/Counter';
+import Form from './components/Form';
+import Todo from './components/Todo';
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="task">
+        <p>React State and Hooks Test</p>
       </header>
+      <header className="App-header">
+        <p>Counter App</p>
+      </header>
+      <p> <Counter /> </p>
+      <header className="App-header">
+        <p>Form App</p>
+      </header>
+      <p> <Form /> </p>
+      <header className="App-header">
+        <p>Todo App</p>
+      </header>
+      <p> <Todo /> </p>
     </div>
   );
 }
